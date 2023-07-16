@@ -1,0 +1,53 @@
+.Card {
+  border: 2.5px solid #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  width: auto;
+  height: auto;
+  min-width: 20vw;
+}
+.Card .Avatar {
+  width: 100px;
+  height: 100px;
+}
+.Card .Username {
+  font-weight: normal;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  margin-bottom: 20px;
+}
+.Card .Table {
+  width: 100%;
+  border: 1px solid #fff;
+}
+.Card .Table td {
+  text-align: center;
+}
+.Card .Table td a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.Card .Table td a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+.Card .Table .TitleTd {
+  border-right: 1px solid #fff;
+}
+.Card .Table tr td {
+  border-top: 2px solid #fff;
+}
+.Card .Table tr:first-child td {
+  border-top: none;
+}
+
+.GithubLink {
+  margin-top: 20px;
+  color: white;
+  text-decoration: underline;
+}

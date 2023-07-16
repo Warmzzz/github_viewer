@@ -1,0 +1,51 @@
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.Container .Form {
+  display: flex;
+  flex-direction: column;
+}
+.Container .Form .Input {
+  width: clamp(120px, 50vw, 420px);
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  border: 1px solid #000;
+  border-radius: 2px;
+  margin: 0.625rem auto;
+  transition: all 250ms;
+}
+@media (min-width: 768px) {
+  .Container .Form .Input {
+    width: clamp(120px, 35vw, 420px);
+  }
+}
+.Container .Form .Input:focus {
+  outline: none;
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+.Container .Form .SubmitButton {
+  width: clamp(120px, 50vw, 420px);
+  height: 2.5rem;
+  border: 1px solid #000;
+  border-radius: 2px;
+  margin: 0.625rem auto;
+  transition: all 250ms;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .Container .Form .SubmitButton {
+    width: clamp(120px, 35vw, 420px);
+  }
+}
+.Container .Form .SubmitButton:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.Container .Form .AlertMessage {
+  color: red;
+}

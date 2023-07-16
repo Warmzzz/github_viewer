@@ -1,0 +1,38 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.HomeLink {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 250ms ease-in-out;
+}
+.HomeLink:hover {
+  transform: translateY(5px);
+}
+
+.BackLink {
+  margin-top: 30px;
+}
+.BackLink button {
+  width: clamp(120px, 50vw, 420px);
+  height: 2.5rem;
+  border: 1px solid #000;
+  border-radius: 2px;
+  margin: 0.625rem auto;
+  transition: all 250ms;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .BackLink button {
+    width: clamp(120px, 35vw, 420px);
+  }
+}
+.BackLink button:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
